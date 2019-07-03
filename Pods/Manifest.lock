@@ -1,0 +1,24 @@
+PODS:
+  - BaseClassModule (0.1.0):
+    - ResourceUtilityClass
+  - ResourceUtilityClass (0.1.5)
+
+DEPENDENCIES:
+  - BaseClassModule (from `../Example`)
+  - ResourceUtilityClass (~> 0.1.5)
+
+SPEC REPOS:
+  https://github.com/LiBiYong/SpecsLibrary.git:
+    - ResourceUtilityClass
+
+EXTERNAL SOURCES:
+  BaseClassModule:
+    :path: "../Example"
+
+SPEC CHECKSUMS:
+  BaseClassModule: 21da6f49952a2b79999485985723eef7e656033e
+  ResourceUtilityClass: 11b654231a495e262b1037b93dde4a73a089588a
+
+PODFILE CHECKSUM: 685afaed686dd6d564819fb80c4445444758d9b2
+
+COCOAPODS: 1.5.3
