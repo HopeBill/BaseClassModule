@@ -65,7 +65,8 @@
 		A90E568B22CCB29A0026CC05 /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
 		A90E568C22CCB29A0026CC05 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		A90E568D22CCB29A0026CC05 /* TabbarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabbarViewController.m; sourceTree = "<group>"; };
-		A90E569122CCB2A00026CC05 /* BaseClassModule.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BaseClassModule.podspec; sourceTree = SOURCE_ROOT; };
+		A90E569122CCB2A00026CC05 /* BaseClassModule.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BaseClassModule.podspec; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A956A63322CDA476004EE4CB /* BaseClassModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseClassModule.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,12 +173,13 @@
 		A90E568722CCB29A0026CC05 /* BaseClassModule */ = {
 			isa = PBXGroup;
 			children = (
-				A90E568822CCB29A0026CC05 /* NavigationController.h */,
-				A90E568922CCB29A0026CC05 /* BaseViewController.m */,
-				A90E568A22CCB29A0026CC05 /* TabbarViewController.h */,
-				A90E568B22CCB29A0026CC05 /* NavigationController.m */,
 				A90E568C22CCB29A0026CC05 /* BaseViewController.h */,
+				A90E568922CCB29A0026CC05 /* BaseViewController.m */,
+				A90E568822CCB29A0026CC05 /* NavigationController.h */,
+				A90E568B22CCB29A0026CC05 /* NavigationController.m */,
+				A90E568A22CCB29A0026CC05 /* TabbarViewController.h */,
 				A90E568D22CCB29A0026CC05 /* TabbarViewController.m */,
+				A956A63322CDA476004EE4CB /* BaseClassModule.h */,
 			);
 			path = BaseClassModule;
 			sourceTree = SOURCE_ROOT;
