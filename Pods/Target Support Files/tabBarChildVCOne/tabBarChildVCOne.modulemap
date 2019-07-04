@@ -1,0 +1,6 @@
+framework module tabBarChildVCOne {
+  umbrella header "tabBarChildVCOne-umbrella.h"
+
+  export *
+  module * { export * }
+}

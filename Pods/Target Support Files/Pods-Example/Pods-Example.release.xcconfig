@@ -1,8 +1,8 @@
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/BaseClassModule" "${PODS_CONFIGURATION_BUILD_DIR}/ResourceUtilityClass"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/BaseClassModule" "${PODS_CONFIGURATION_BUILD_DIR}/CTMediator" "${PODS_CONFIGURATION_BUILD_DIR}/CTMediatorTarget" "${PODS_CONFIGURATION_BUILD_DIR}/ResourceUtilityClass" "${PODS_CONFIGURATION_BUILD_DIR}/tabBarChildVCOne"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "${PODS_CONFIGURATION_BUILD_DIR}/BaseClassModule/BaseClassModule.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/ResourceUtilityClass/ResourceUtilityClass.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "BaseClassModule" -framework "ResourceUtilityClass"
+OTHER_CFLAGS = $(inherited) -iquote "${PODS_CONFIGURATION_BUILD_DIR}/BaseClassModule/BaseClassModule.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/CTMediator/CTMediator.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/CTMediatorTarget/CTMediatorTarget.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/ResourceUtilityClass/ResourceUtilityClass.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/tabBarChildVCOne/tabBarChildVCOne.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "BaseClassModule" -framework "CTMediator" -framework "CTMediatorTarget" -framework "ResourceUtilityClass" -framework "tabBarChildVCOne"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.

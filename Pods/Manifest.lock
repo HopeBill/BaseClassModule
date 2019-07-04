@@ -1,24 +1,54 @@
 PODS:
-  - BaseClassModule (0.1.0):
+  - BaseClassModule (0.1.1):
+    - CTMediatorTarget
     - ResourceUtilityClass
-  - ResourceUtilityClass (0.1.5)
+  - CTMediator (25)
+  - CTMediatorTarget (0.1.2):
+    - CTMediator
+    - CTMediatorTarget/Actions (= 0.1.2)
+    - CTMediatorTarget/ModuleA (= 0.1.2)
+    - tabBarChildVCOne
+  - CTMediatorTarget/Actions (0.1.2):
+    - CTMediator
+    - tabBarChildVCOne
+  - CTMediatorTarget/ModuleA (0.1.2):
+    - CTMediator
+    - tabBarChildVCOne
+  - ResourceUtilityClass (0.2.1):
+    - ResourceUtilityClass/Header_M (= 0.2.1)
+    - ResourceUtilityClass/Object_M (= 0.2.1)
+    - ResourceUtilityClass/Plist_M (= 0.2.1)
+    - ResourceUtilityClass/Tool_M (= 0.2.1)
+  - ResourceUtilityClass/Header_M (0.2.1)
+  - ResourceUtilityClass/Object_M (0.2.1)
+  - ResourceUtilityClass/Plist_M (0.2.1)
+  - ResourceUtilityClass/Tool_M (0.2.1)
+  - tabBarChildVCOne (0.1.1)
 
 DEPENDENCIES:
   - BaseClassModule (from `../Example`)
-  - ResourceUtilityClass (~> 0.1.5)
+  - CTMediatorTarget (~> 0.1.2)
+  - ResourceUtilityClass (~> 0.2.1)
 
 SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CTMediator
   https://github.com/LiBiYong/SpecsLibrary.git:
+    - CTMediatorTarget
     - ResourceUtilityClass
+    - tabBarChildVCOne
 
 EXTERNAL SOURCES:
   BaseClassModule:
     :path: "../Example"
 
 SPEC CHECKSUMS:
-  BaseClassModule: 21da6f49952a2b79999485985723eef7e656033e
-  ResourceUtilityClass: 11b654231a495e262b1037b93dde4a73a089588a
+  BaseClassModule: cb315ea34751b1317240839d8b40c52a3ddb5898
+  CTMediator: 830c1fc204b3a6abf2a059510c7380f56343da0f
+  CTMediatorTarget: 0d2f3a81794acb55a9186deab208c84027ac288d
+  ResourceUtilityClass: f1c875e080747aba351b74e84eabad1a4168a381
+  tabBarChildVCOne: e3a02656be331e722f9a3f7245c1b33eaf8f5725
 
-PODFILE CHECKSUM: 685afaed686dd6d564819fb80c4445444758d9b2
+PODFILE CHECKSUM: 7cd481a13c735d1fba95016b14e1efb1611a6fb8
 
 COCOAPODS: 1.5.3

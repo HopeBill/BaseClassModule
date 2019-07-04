@@ -10,9 +10,9 @@
 #endif
 #endif
 
+#import "ResourceUtilityClass.h"
 #import "MacroHeader.h"
 #import "RequestAPIHeader.h"
-#import "ResourceUtilityClass.h"
 #import "NSArray+Tool.h"
 #import "NSDate+TimeInterVal.h"
 #import "NSDictionary+Tool.h"

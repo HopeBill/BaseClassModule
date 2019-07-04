@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "BaseClassModule.h"
 #import "BaseViewController.h"
 #import "NavigationController.h"
 #import "TabbarViewController.h"
