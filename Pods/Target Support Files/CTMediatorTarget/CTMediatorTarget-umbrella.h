@@ -11,7 +11,7 @@
 #endif
 
 #import "Target_A.h"
-#import "CTMediator+ModuleActions.h"
+#import "CTMediator+ModuleAActions.h"
 
 FOUNDATION_EXPORT double CTMediatorTargetVersionNumber;
 FOUNDATION_EXPORT const unsigned char CTMediatorTargetVersionString[];

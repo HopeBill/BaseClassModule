@@ -12,4 +12,5 @@
 #import "RequestAPIHeader.h"
 #import "Tool.h"
 #import "Helper.h"
+#import "UIImage+Tool.h"
 #endif

@@ -7,24 +7,17 @@
 //
 
 #import "Target_A.h"
-
 #import "OneViewController.h"
+
 
 typedef void (^CTUrlRouterCallbackBlock)(NSDictionary *info);
 
 @implementation Target_A
--(UIViewController*)Action_tabBarViewControllerOne{
+-(UIViewController*)Action_tabBarViewControllerOne:(NSDictionary *)params{
+    OneViewController *VC=[[OneViewController alloc] init];
     
-    return [[OneViewController alloc] init];
-}
--(UIViewController*)Action_tabBarViewControllerTwo{
-     return [[OneViewController alloc] init];
-}
--(UIViewController*)Action_tabBarViewControllerThree{
-     return [[OneViewController alloc] init];
-}
--(UIViewController*)Action_tabBarViewControllerFour{
-     return [[OneViewController alloc] init];
+    
+    return VC;
 }
 
 @end

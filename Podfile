@@ -6,6 +6,6 @@ platform :ios, '8.0'
 use_frameworks!
 target 'Example' do
 pod  'BaseClassModule', :path =>'../Example'
-pod  'ResourceUtilityClass', '~>0.2.1'
-pod  'CTMediatorTarget', '~>0.1.2'
+pod  'ResourceUtilityClass', '~>0.2.5'
+pod  'CTMediatorTarget', '~>0.1.3'
 end

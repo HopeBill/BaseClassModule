@@ -11,9 +11,5 @@
 
 @interface Target_A : NSObject
 
--(UIViewController*)Action_tabBarViewControllerOne;
--(UIViewController*)Action_tabBarViewControllerTwo;
--(UIViewController*)Action_tabBarViewControllerThree;
--(UIViewController*)Action_tabBarViewControllerFour;
-
+-(UIViewController*)Action_tabBarViewControllerOne:(NSDictionary*)params;
 @end

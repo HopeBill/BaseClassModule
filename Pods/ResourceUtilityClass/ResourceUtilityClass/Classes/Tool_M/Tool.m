@@ -9,15 +9,6 @@
 #import "Tool.h"
 @implementation Tool
 
-+(UIImage *)getImageWithBoudleName:(NSString *)boudleName imgName:(NSString *)imgName {
-    NSBundle *bundle = [NSBundle bundleForClass:[self class]];
-    NSURL *url = [bundle URLForResource:boudleName withExtension:@"bundle"];
-    NSBundle *targetBundle = [NSBundle bundleWithURL:url];
-    UIImage *image = [UIImage imageNamed:imgName
-                                inBundle:targetBundle
-           compatibleWithTraitCollection:nil];
-    return image;
-}
 #pragma mark===自定义颜色的图片
 +(UIImage *)imageWithColor:(UIColor *)color {
     //创建1像素区域并开始图片绘图

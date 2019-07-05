@@ -9,7 +9,7 @@
 #import "TabbarViewController.h"
 #import "NavigationController.h"
 #import "ResourceUtilityClass.h"
-#import "CTMediator+ModuleActions.h"
+#import "CTMediator+ModuleAActions.h"
 @interface TabbarViewController ()<UITabBarControllerDelegate>
 
 @end
@@ -31,13 +31,13 @@
     
     self.delegate=self;
    
-    [self setChildController:[[CTMediator sharedInstance] CTMediator_tabBarViewControllerOne] title:@"首页" image:@"icon_shouye_deselect@2x.png" selectedImage:@"icon_shouye_select@2x.png" withTag:0];
+    [self setChildController:[[CTMediator sharedInstance] CTMediator_tabBarViewControllerOne] title:@"首页" image:@"icon_mess_select" selectedImage:@"icon_mess_select" withTag:0];
     
-     [self setChildController: [[CTMediator sharedInstance] CTMediator_tabBarViewControllerOne] title:@"消息" image:@"icon_mess_deselect@2x.png" selectedImage:@"icon_mess_select@2x.png" withTag:1];
+     [self setChildController: [[CTMediator sharedInstance] CTMediator_tabBarViewControllerOne] title:@"消息" image:@"icon_mess_select" selectedImage:@"icon_mess_select" withTag:1];
     
-     [self setChildController:[[CTMediator sharedInstance] CTMediator_tabBarViewControllerOne] title:@"订单" image:@"icon_order_deselect@2x.png" selectedImage:@"icon_order_select@2x.png" withTag:2];
+     [self setChildController:[[CTMediator sharedInstance] CTMediator_tabBarViewControllerOne] title:@"订单" image:@"icon_mess_select" selectedImage:@"icon_mess_select" withTag:2];
     
-     [self setChildController:[[CTMediator sharedInstance] CTMediator_tabBarViewControllerOne] title:@"我的" image:@"icon_my_deselsct@2x.png" selectedImage:@"icon_my_selsct@2x.png" withTag:3];
+     [self setChildController:[[CTMediator sharedInstance] CTMediator_tabBarViewControllerOne] title:@"我的" image:@"icon_mess_select" selectedImage:@"icon_mess_select" withTag:3];
 
 //    [self initialize];
 }
@@ -71,9 +71,9 @@
     vc.navigationItem.title=title;
     vc.tabBarItem.title=title;
     vc.tabBarItem.tag=tag;
-    
-    vc.tabBarItem.image=[Tool getImageWithBoudleName:@"utilityImage" imgName:image];
-    vc.tabBarItem.selectedImage=[Tool getImageWithBoudleName:@"utilityImage" imgName:selectedImage];
+    vc.tabBarItem.image=[UIImage getImgName:image withBundle:@"TabBarImage"];
+
+     vc.tabBarItem.selectedImage=[UIImage getImgName:selectedImage withBundle:@"TabBarImage"];
     //包装一个导航控制器，添加导航控制器为tabbarController的子控制器
     NavigationController *nav=[[NavigationController alloc] initWithRootViewController:vc];
     [self addChildViewController:nav];

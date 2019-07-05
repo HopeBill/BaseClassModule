@@ -10,11 +10,7 @@
 #import <UIKit/UIKit.h>
 
 @interface Tool : NSObject
-/**
- *boudleName：包名
- *imgName：图片的全名
- **/
-+(UIImage *)getImageWithBoudleName:(NSString *)boudleName imgName:(NSString *)imgName;
+
 /**
  *自定义颜色的图片
  **/
